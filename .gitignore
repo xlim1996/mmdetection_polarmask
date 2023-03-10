@@ -1,0 +1,19 @@
+.vscode/
+build/
+dist/
+MSCOCO2017/
+train2017/
+train2017_instance/
+coco/
+dataset/
+datasets/
+# Compile files
+**/__pycache__/
+*.pyc
+*.egg-info
+*-metadata
+*.mp4
+*.zip
+*.txt
+*.out
+*.pth
