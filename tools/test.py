@@ -28,7 +28,7 @@ def parse_args():
     parser.add_argument(
         '--work-dir',
         help='the directory to save the file containing evaluation metrics')
-    parser.add_argument('--checkpoint',default='/home/ali/mmdetection/work_dirs/polar_768_1x_r50_coco/epoch_1.pth' ,help='checkpoint file')
+    parser.add_argument('--checkpoint',default='work_dirs/polar_768_1x_r50_coco/epoch_1.pth' ,help='checkpoint file')
     parser.add_argument('--out', help='output result file in pickle format')
     parser.add_argument(
         '--fuse-conv-bn',

@@ -128,9 +128,10 @@ runner = dict(type='EpochBasedRunner', max_epochs=1)
 checkpoint_config = dict(interval=1)
 log_config = dict(interval=10, hooks=[dict(type='TextLoggerHook')])
 dist_params = dict(backend='nccl')
-checkpoint='work_dirs/polar_768_1x_r50_coco/epoch_1.pth'
+# checkpoint='work_dirs/polar_768_1x_r50_coco/epoch_1.pth'
 log_level = 'INFO'
 load_from = None
-resume_from = 'work_dirs/polar_768_1x_r50_coco/epoch_1.pth'
-workflow = [('test', 1)]
+resume_from = None
+# resume_from = 'work_dirs/polar_768_1x_r50_coco/epoch_1.pth'
+workflow = [('train', 1)]
 # workflow = [('train', 1), ('val', 1)]

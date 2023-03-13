@@ -196,8 +196,8 @@ log_config = dict(interval=10, hooks=[dict(type='TextLoggerHook')])
 dist_params = dict(backend='nccl')
 log_level = 'INFO'
 load_from = None
-resume_from = 'work_dirs/polar_768_1x_r50_coco/epoch_1.pth'
-workflow = [('test', 1)]
+resume_from = None
+workflow = [('train', 1)]
 work_dir = './work_dirs/polar_768_1x_r50_coco'
 auto_resume = False
 gpu_ids = [0]
